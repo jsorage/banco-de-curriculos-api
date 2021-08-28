@@ -1,10 +1,10 @@
-import express from 'express';
+const express = require('express');
 
-import routes from './routes';
-import Database from './database';
+const routes = require('./routes');
+const Database = require('./database');
 
-import { options } from './swagger';
-import expressJSDocSwagger from 'express-jsdoc-swagger';
+const { options } = require('./swagger');
+const expressJSDocSwagger = require('express-jsdoc-swagger');
 
 class App {
   constructor() {
@@ -35,4 +35,4 @@ class App {
 
 }
 
-export default new App().server;
+module.exports = new App().server;

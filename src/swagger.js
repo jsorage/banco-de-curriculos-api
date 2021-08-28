@@ -1,6 +1,6 @@
-import { version } from '../package.json'
+const { version } = require('../package.json');
 
-export const options = {
+const options = {
   info: {
     version,
     title: 'JobsNET',
@@ -34,3 +34,6 @@ export const options = {
   // multiple option in case you want more that one instance
   multiple: true,
 };
+
+
+module.exports = { options };

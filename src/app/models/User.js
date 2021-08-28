@@ -1,4 +1,4 @@
-import * as mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema({
 
@@ -62,4 +62,4 @@ const UserSchema = new mongoose.Schema({
   marital_status: String,
 });
 
-export default mongoose.model("User", UserSchema);
+module.exports = mongoose.model("User", UserSchema);

@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const MONGO_URL = process.env.MONGO_URL;
 const MONGO_OPTIONS = { useNewUrlParser: true, useUnifiedTopology: true };
@@ -10,4 +10,4 @@ class Database {
   }
 }
 
-export default Database;
+module.exports = Database;
